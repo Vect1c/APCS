@@ -1,2 +1,2 @@
 # APCS
-My AP Computer Science repo
+My AP Computer Science A repo
