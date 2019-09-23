@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TriangleTest",
+            "request": "launch",
+            "mainClass": "TriangleTest",
+            "projectName": "Triangle Area Program_75bb40d5"
+        }
+    ]
+}
