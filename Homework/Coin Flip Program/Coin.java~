@@ -1,0 +1,29 @@
+import java.awt.Image;
+import java.awt.Graphics;
+
+public class Coin 
+{
+    private boolean flipping = true;
+    private Image heads;
+    private Image tails;
+    public Coin(Image h, Image t)
+    {
+        heads = h;
+        tails = t;
+    }
+    public void draw(Graphics g, int x, int y){
+        if (flipping)
+        {
+            g.drawImage(heads, x, y, null);
+        }
+        else
+        {
+            g.drawImage(tails, x, y, null);
+        }
+
+        }
+    public void flip()
+    {
+        flipping = !flipping;
+    }
+}
