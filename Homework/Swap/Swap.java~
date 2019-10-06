@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Swap
+{
+    public static int swapPlaces(int x)
+    {
+        if (x > 99 && x < 1000)
+        {
+            int i = x % 10 // ones place
+            int j = (x % 100) - i; // tens place
+            int t = x - j - i; // hundreds place
+            
+            i = i * 10;
+            j = j / 10;
+
+            return t + j + i;
+        }
+        else if (x > 9 && x < 100)
+        {
+            int c = x % 10 // ones place
+            int v = x - c // tens place
+
+            c = c * 10;
+            v = v / 10;
+
+            return c + v;
+        }
+        else 
+        {
+            x = x * 10;
+            
+            return x;
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Please enter a positive interger less than 1000: ");
+        int num = scan.nextInt();
+
+        while (num > 1000 && num < 0)
+        {
+            if (num > 1000)
+            {
+                System.out.print("\n" + "This number is greater than 1000, please try again: ");
+                num = scan.nextInt();
+            }
+            else if (num < 0)
+            {
+                System.out.print("\n" + "This number is negative, please try again: ");
+                num = scan.nextInt();
+            }
+        }
+            
+        System.out.print("\n" + "Swapping numbers... " + "\n" + "New number is: " + )
+    }
+}
