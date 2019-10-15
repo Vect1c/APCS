@@ -1,0 +1,18 @@
+public class PhoneNumber
+{
+  public static void main(String[] args)
+  {
+   int a = (int)(Math.random()8);
+   int b = (int)(Math.random()8);
+   int c = (int)(Math.random()8);
+   int d = (int)(Math.random()7);
+   int e = (int)(Math.random()4);
+   int f = (int)(Math.random()2);
+   int g = (int)(Math.random()10);
+   int h = (int)(Math.random()10);
+   int i = (int)(Math.random()10);
+   int j = (int)(Math.random()10);
+   
+   System.out.println(""+a+b+c+"-"+d+e+f+"-"+g+h+i+j);
+  }
+}

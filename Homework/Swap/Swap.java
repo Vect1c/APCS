@@ -4,33 +4,14 @@ public class Swap
 {
     public static int swapPlaces(int x)
     {
-        if (x > 99 && x < 1000)
-        {
-            int i = x % 10; // ones place
-            int j = (x % 100) - i; // tens place
-            int t = x - j - i; // hundreds place
+      int i = x % 10; // ones place
+      int j = (x % 100) - i; // tens place
+      int t = x - j - i; // hundreds place
             
-            i = i * 10;
-            j = j / 10;
-
-            return t + j + i;
-        }
-        else if (x > 9 && x < 100)
-        {
-            int c = x % 10; // ones place
-            int v = x - c; // tens place
-
-            c = c * 10;
-            v = v / 10;
-
-            return c + v;
-        }
-        else 
-        {
-            x = x * 10;
-            
-            return x;
-        }
+      i = i * 10;
+      j = j / 10;
+      
+      return t + j + i;
     }
 
     public static void main(String[] args)
@@ -54,5 +35,8 @@ public class Swap
           }
         
         System.out.print("\n" + "Swapping numbers... " + "\n" + "New number is: " + swapPlaces(num));
+
+        scan.close();
     }
 }
+
