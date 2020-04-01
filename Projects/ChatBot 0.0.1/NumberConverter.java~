@@ -1,7 +1,5 @@
 
 import java.util.Scanner;
-import java.lang.Integer;
-import java.lang.String;
 
 public class NumberConverter
 {

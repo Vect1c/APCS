@@ -1,21 +1,13 @@
-
 import java.util.Scanner;
-import java.lang.Integer;
-import java.lang.String;
 
 public class NumberConverter
 {
-    private String in;
-    public NumberConverter(String in)
-    {
-        this.in = in;
-    }
     // binary input
     public int binaryToDecimal(String input) 
     {
         int expo = 0;
         int decValue = 0;
-        int binaryValue = input.parseInt();
+        int binaryValue = Integer.parseInt(input);
 
         while (binaryValue > 0)
         {
@@ -31,7 +23,7 @@ public class NumberConverter
     {
         int expo = 0;
         int decValue = 0;
-        int binaryValue = input.parseInt();
+        int binaryValue = Integer.parseInt(input);
         String hex = "";
 
         while (binaryValue > 0)
@@ -88,7 +80,7 @@ public class NumberConverter
 
     public String decToBin(String input)
     {
-        int dec = input.parseInt();
+        int dec = Integer.parseInt(input);
         String bin = "";
 
         while (dec >= 1)
@@ -103,7 +95,7 @@ public class NumberConverter
 
     public String decToHex(String input)
     {
-        int dec = input.parseInt();
+        int dec = Integer.parseInt(input);
         String hex = "";
 
         while (dec >= 1)

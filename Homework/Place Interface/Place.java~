@@ -1,0 +1,7 @@
+public interface Place 
+{
+    doulbe distance(Place other)
+
+    double getX();
+    double getY();
+}
